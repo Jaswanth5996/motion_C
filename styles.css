@@ -1,0 +1,205 @@
+.navi {
+    background-color: black;
+    width: 100%;
+
+}
+
+.navi li {
+    list-style: none;
+    background-color: black;
+    font-weight: 500;
+    margin-inline: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navi li a {
+    text-decoration: none;
+    color: white;
+    float: left;
+    background-color: black;
+    padding: 30px;
+
+
+}
+
+.navi li a:hover {
+    color: black;
+    background-color: white;
+    padding: 20px;
+    padding-top: 10px;
+    margin-top: 20px;
+    border: solid black 2px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 30px;
+    font-size: 30px;
+
+}
+button
+{
+   margin-left: 150px; 
+   margin-bottom: 50px;
+   margin-top: 50px;
+   padding:15px;
+   width: 40%;
+   border: solid white 3px;
+   border-radius: 10%;
+   color: white;
+   font-size: large;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover
+{
+    color:black;
+    background-color: white;
+    cursor: pointer;
+}
+main {
+    display: block;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    width: 3px / 4px;
+    ;
+}
+
+.product {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    flex-basis: 30%;
+}
+
+.product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product h2 {
+    margin-top: 0;
+    text-align: center;
+    color: white;
+    background-color: rgb(63, 54, 225);
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.product p {
+    margin-bottom: 0;
+    font-size: 20px;
+    color: #333;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 550;
+    font-size: 100px;
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sbar {
+    padding: 10px;
+    float: right;
+    margin-top: 25px;
+    margin-right: 80px;
+    width: 150px;
+}
+
+input:hover {
+    border: solid rgb(244, 5, 5) 2px;
+
+}
+
+#one {
+    background-color: rgb(252, 207, 6);
+}
+#one:hover,#two:hover,#three:hover {
+    background-color: rgb(0, 0, 0);
+    color:white
+}
+
+#two {
+    background-color: rgb(235, 68, 96);
+}
+
+#three {
+    background-color: rgb(159, 246, 29);
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 60px;
+}
+
+.content {
+    font-size: larger;
+    text-align: left;
+    padding: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+}
+
+#n {
+    background-color: red;
+}
+
+@media (min-width: 768px) {
+    main {
+        flex-wrap: nowrap;
+    }
+
+    .product {
+        flex-basis: 30%;
+        margin-right: 20px;
+    }
+
+    .product:last-child {
+        margin-right: 0;
+    }
+}
+
+/* CSS for smaller screens */
+@media (max-width: 767px) {
+    .product {
+        flex-basis: 100%;
+        margin-right: 0;
+    }
+}

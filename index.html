@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navi" id="navi">
+        <ul>
+
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Login/SignUp</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+
+            <a href="#"><input type="text" placeholder="Search...." class="sbar"></a>
+            <br><br><br><br><br>
+        </ul>
+    </nav>
+    <header>
+        ShowKart-Pricing Plans
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <h2>Lite</h2>
+                <p>$0</p>
+                <section class="content">
+                    <span class="dot" id="n">&#x2717;</span> Free Delivery<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Priority Handling<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Exclusive Discounts<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Early Access<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Enhanced Support
+                </section>
+            </div>
+            <div class="product">
+                <h2 id="one">Basic</h2>
+                <p>$50</p>
+                <section class="content">
+                    <span class="dot" id="one">&#10003;</span>Free Delivery<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Priority Handling<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Exclusive Discounts<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Early Access<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Enhanced Support
+                </section>
+                <button type="button" id="one">UpGrade</button>
+            </div>
+            <div class="product">
+                <h2 id="two">Plus</h2>
+                <p>$80</p>
+                <section class="content">
+                    <span class="dot" id="two">&#10003;</span> Free Delivery<br><br>
+                    <span class="dot" id="two">&#10003;</span>Priority Handling<br><br>
+                    <span class="dot" id="two">&#10003;</span>Exclusive Discounts<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Early Access<br><br>
+                    <span class="dot" id="n">&#x2717;</span> Enhanced Support
+                </section>
+                <button type="button" id="two">UpGrade</button>
+
+            </div>
+            <div class="product">
+                <h2 id="three">Premium</h2>
+                <p>$120</p>
+                <section class="content">
+                    <span class="dot" id="three">&#10003;</span> Free Delivery<br><br>
+                    <span class="dot" id="three">&#10003;</span> Priority Handling<br><br>
+                    <span class="dot" id="three">&#10003;</span> Exclusive Discounts<br><br>
+                    <span class="dot" id="three">&#10003;</span> Early Access<br><br>
+                    <span class="dot" id="three">&#10003;</span> Enhanced Support
+                </section>
+                <button type="button" id="three">UpGrade</button>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 ShowKart Ltd.</p>
+        </div>
+    </footer>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        var navbar = document.getElementById("navi");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
